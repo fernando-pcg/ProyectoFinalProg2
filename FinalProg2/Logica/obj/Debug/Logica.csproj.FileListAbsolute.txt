@@ -1,0 +1,6 @@
+C:\Users\Fernando Figuereo\source\repos\FinalProg2\Logica\bin\Debug\Logica.dll
+C:\Users\Fernando Figuereo\source\repos\FinalProg2\Logica\bin\Debug\Logica.pdb
+C:\Users\Fernando Figuereo\source\repos\FinalProg2\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Fernando Figuereo\source\repos\FinalProg2\Logica\obj\Debug\Logica.dll
+C:\Users\Fernando Figuereo\source\repos\FinalProg2\Logica\obj\Debug\Logica.pdb
+C:\Users\Fernando Figuereo\source\repos\FinalProg2\Logica\obj\Debug\Logica.csprojAssemblyReference.cache

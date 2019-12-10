@@ -1,0 +1,9 @@
+C:\Users\Fernando Figuereo\source\repos\FinalProg2\Datos\bin\Debug\Datos.dll
+C:\Users\Fernando Figuereo\source\repos\FinalProg2\Datos\bin\Debug\Datos.pdb
+C:\Users\Fernando Figuereo\source\repos\FinalProg2\Datos\bin\Debug\Logica.dll
+C:\Users\Fernando Figuereo\source\repos\FinalProg2\Datos\bin\Debug\Logica.pdb
+C:\Users\Fernando Figuereo\source\repos\FinalProg2\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\Fernando Figuereo\source\repos\FinalProg2\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Fernando Figuereo\source\repos\FinalProg2\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\Fernando Figuereo\source\repos\FinalProg2\Datos\obj\Debug\Datos.dll
+C:\Users\Fernando Figuereo\source\repos\FinalProg2\Datos\obj\Debug\Datos.pdb

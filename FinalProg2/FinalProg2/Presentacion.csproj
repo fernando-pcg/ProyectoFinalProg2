@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B065F592-B43F-41FA-9809-B2B8405D05A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FinalProg2</RootNamespace>
+    <AssemblyName>FinalProg2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionClientes\AddCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionClientes\AddCliente.Designer.cs">
+      <DependentUpon>AddCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionClientes\ClienteCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionClientes\ClienteCRUD.Designer.cs">
+      <DependentUpon>ClienteCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionClientes\EditCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionClientes\EditCliente.Designer.cs">
+      <DependentUpon>EditCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionClientes\GestClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionClientes\GestClientes.Designer.cs">
+      <DependentUpon>GestClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionPrestamos\AddPagoPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionPrestamos\AddPagoPrestamo.Designer.cs">
+      <DependentUpon>AddPagoPrestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionPrestamos\AddPrestamoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionPrestamos\AddPrestamoForm.Designer.cs">
+      <DependentUpon>AddPrestamoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionPrestamos\EditPrestamoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionPrestamos\EditPrestamoForm.Designer.cs">
+      <DependentUpon>EditPrestamoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionPrestamos\PrestamosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionPrestamos\PrestamosForm.Designer.cs">
+      <DependentUpon>PrestamosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionUsuarios\AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionUsuarios\AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionUsuarios\EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionUsuarios\EditUser.Designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionUsuarios\MenUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionesAdministrador\GestionUsuarios\MenUsers.Designer.cs">
+      <DependentUpon>MenUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionesAdministrador\GestionClientes\AddCliente.resx">
+      <DependentUpon>AddCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionesAdministrador\GestionClientes\ClienteCRUD.resx">
+      <DependentUpon>ClienteCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionesAdministrador\GestionClientes\EditCliente.resx">
+      <DependentUpon>EditCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionesAdministrador\GestionClientes\GestClientes.resx">
+      <DependentUpon>GestClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionesAdministrador\GestionPrestamos\AddPrestamoForm.resx">
+      <DependentUpon>AddPrestamoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionesAdministrador\GestionPrestamos\EditPrestamoForm.resx">
+      <DependentUpon>EditPrestamoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionesAdministrador\GestionPrestamos\PrestamosForm.resx">
+      <DependentUpon>PrestamosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionesAdministrador\GestionUsuarios\AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionesAdministrador\GestionUsuarios\EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionesAdministrador\GestionUsuarios\MenUsers.resx">
+      <DependentUpon>MenUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recursos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{90613fd1-ea1c-4b26-8539-d790287b2943}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logica\Logica.csproj">
+      <Project>{b90cabbd-ee82-4d31-ad04-c3178ea222e6}</Project>
+      <Name>Logica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GestionesAdministrador\GestionUsuarios\Recursos\icons8-add-user-group-man-man-30.png" />
+    <Content Include="GestionesAdministrador\GestionUsuarios\Recursos\icons8-add-user-male-40.png" />
+    <Content Include="GestionesAdministrador\GestionUsuarios\Recursos\icons8-buscar-cliente-30.png" />
+    <Content Include="GestionesAdministrador\GestionUsuarios\Recursos\icons8-cerrar-ventana-48.png" />
+    <Content Include="GestionesAdministrador\GestionUsuarios\Recursos\icons8-conferencia-48.png" />
+    <Content Include="GestionesAdministrador\GestionUsuarios\Recursos\icons8-configuración-del-administrador-48.png" />
+    <Content Include="GestionesAdministrador\GestionUsuarios\Recursos\icons8-contact-details-64.png" />
+    <Content Include="GestionesAdministrador\GestionUsuarios\Recursos\icons8-denied-40.png" />
+    <Content Include="GestionesAdministrador\GestionUsuarios\Recursos\icons8-edit-profile-40.png" />
+    <Content Include="GestionesAdministrador\GestionUsuarios\Recursos\icons8-entrar-48.png" />
+    <Content Include="GestionesAdministrador\GestionUsuarios\Recursos\icons8-money-100.png" />
+    <Content Include="GestionesAdministrador\GestionUsuarios\Recursos\icons8-money-64.png" />
+    <Content Include="GestionesAdministrador\GestionUsuarios\Recursos\icons8-money-bag-40.png" />
+    <Content Include="GestionesAdministrador\GestionUsuarios\Recursos\icons8-presupuesto-48.png" />
+    <Content Include="GestionesAdministrador\GestionUsuarios\Recursos\icons8-salida-48.png" />
+    <Content Include="GestionesAdministrador\GestionUsuarios\Recursos\icons8-shpatel-256.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
