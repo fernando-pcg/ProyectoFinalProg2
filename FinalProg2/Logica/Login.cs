@@ -33,13 +33,13 @@ namespace Logica
     }
     public class Prestamo
     {
-        decimal Interes { get; set; }
-        decimal Capital { get; set; }
-        string Tiempo { get; set; }
-        string Fecha { get; set; }
-        int Cuotas { get; set; }
-        decimal Pagos { get; set; }
-        decimal Deudas { get; set; }
+        public decimal Interes { get; set; }
+        public decimal Capital { get; set; }
+        public string Tiempo { get; set; }
+        public string Fecha { get; set; }
+        public int Cuotas { get; set; }
+        public decimal Pagos { get; set; }
+        public decimal Deudas { get; set; }
     }
 
     public class Users

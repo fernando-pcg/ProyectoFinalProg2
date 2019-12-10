@@ -226,7 +226,7 @@ namespace Datos
         public void ActualizarU(string nombre, string correo, string clave, string estado, int idusuario)
         {
             Conexion();
-            string lineacomando = $"update Usuarios set Nombre ='{nombre}', Correo='{correo}',Estado='{estado}', Rol ={rol}  where idusuario = {idusuario}";
+            string lineacomando = $"update Usuarios set Nombre ='{nombre}', Correo='{correo}',Estado='{estado}' where idusuario = {idusuario}";
             comando = new SqlCommand(lineacomando, cnn);
             comando.ExecuteNonQuery();
             cnn.Close();
@@ -266,6 +266,24 @@ namespace Datos
         {
             Conexion();
             string lineaComando = $"select idusuario, Nombre,Correo,Clave,Estado from Usuarios" +
+                $"";
+            comando = new SqlCommand(lineaComando, cnn);
+            comando.ExecuteNonQuery();
+            //Comando para adaptar la vista de la tabla al datagridview
+            SqlDataAdapter data = new SqlDataAdapter(comando);
+            //instanciando la tabla como nueva tabla de datos
+            DataTable table = new DataTable();
+            //Llenar el grid con la tabla adaptada
+            data.Fill(table);
+            cnn.Close();
+            //Retorna la tabla
+            return table;
+
+        }
+        public DataTable LlenarGridP()
+        {
+            Conexion();
+            string lineaComando = $"select * from Prestamos" +
                 $"";
             comando = new SqlCommand(lineaComando, cnn);
             comando.ExecuteNonQuery();

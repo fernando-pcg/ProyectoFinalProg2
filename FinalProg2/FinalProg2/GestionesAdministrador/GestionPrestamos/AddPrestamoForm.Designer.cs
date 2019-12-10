@@ -42,7 +42,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.txt_Pagos = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txt_Id = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -166,13 +166,13 @@
             this.label12.TabIndex = 49;
             this.label12.Text = "Pagos Adicionales";
             // 
-            // textBox11
+            // txt_Id
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(659, 218);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 20);
-            this.textBox11.TabIndex = 48;
+            this.txt_Id.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Id.Location = new System.Drawing.Point(659, 218);
+            this.txt_Id.Name = "txt_Id";
+            this.txt_Id.Size = new System.Drawing.Size(100, 20);
+            this.txt_Id.TabIndex = 48;
             // 
             // label11
             // 
@@ -198,9 +198,9 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(465, 218);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(83, 13);
+            this.label10.Size = new System.Drawing.Size(61, 13);
             this.label10.TabIndex = 45;
-            this.label10.Text = "Atendido por ";
+            this.label10.Text = "Id Cliente";
             // 
             // textBox9
             // 
@@ -372,6 +372,7 @@
             this.button1.TabIndex = 54;
             this.button1.Text = "Añadir Prestamo";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -381,6 +382,7 @@
             this.button2.TabIndex = 55;
             this.button2.Text = "Borrar Prestamo";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // AddPrestamoForm
             // 
@@ -393,7 +395,7 @@
             this.Controls.Add(this.label14);
             this.Controls.Add(this.txt_Pagos);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.txt_Id);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.label10);
@@ -439,7 +441,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txt_Pagos;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txt_Id;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label10;
